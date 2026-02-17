@@ -1,0 +1,1 @@
+def boas_vindas(nome): print(f"Boas-Vindas, {nome}")
