@@ -35,3 +35,11 @@ novas_pastas_conjuntas = Path("Pasta_1/Pasta_2/Pasta_3")
 novas_pastas_conjuntas.mkdir(parents=True, exist_ok=True) # cria uma nova pasta (se a pasta já existir, não cria novamente)
 
 nova_pasta.rmdir() # remove a pasta
+
+iterar_pasta = Path("nome_da_pasta")
+for arquivo in iterar_pasta.iterdir(): # o iterdir é usado p/ iterar sobre todos os arquivos e pastas dentro da pasta
+    print(arquivo)
+
+iterar_pasta_filtro = Path("nome_da_pasta")
+for arquivo in iterar_pasta_filtro.glob("*.txt"): # o glob é usado p/ filtrar arquivos específicos (como apenas .txt, por exemplo)
+    print(arquivo)
