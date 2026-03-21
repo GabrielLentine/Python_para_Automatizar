@@ -6,6 +6,9 @@ print(caminho_arquivo) # caminho relativo (o arquivo está no mesmo diretório q
 caminho_arquivo2 = Path(r"E:\PYTHON\Python_Basico_Aulas\Python_Automacao\12_Gerenciamento_Arquivos\teste.txt")
 print(caminho_arquivo2) # caminho absoluto (o arquivo vem desde a raíz do computador)
 
+caminho_absoluto = caminho_arquivo.absolute()
+print(caminho_absoluto) # transforma o caminho relativo em absoluto (o arquivo vem desde a raíz do computador)
+
 print(f"Caminho existe: {caminho_arquivo.exists()}") # verifica se o arquivo existe (True ou False)
 print(f"Caminho existe: {caminho_arquivo2.exists()}") # verifica se o arquivo existe (True ou False)
 
